@@ -1,0 +1,28 @@
+= postgres-docker-template
+:toc:
+
+== Intro and purpose
+
+Docker is a container engine, and toolkit to manage containerized and multi-container applications.
+
+== What is a container
+
+Long story short, a container is an isolated process. It can be thought of heuristically as a lightweight virtual machine.
+
+=== Why use it in a collaboration scenario.
+
+It allows a lightweight, reproducible environment, and we can avoid dependency conflictions, and have exactly the same thing, running on our machines regardless of the host environment.
+
+=== More reading:
+
+- Red Hat docs: link:https://www.redhat.com/en/topics/containers[Understanding Containers]
+- Docker docs: link:https://www.docker.com/resources/what-container/[What is a container]
+
+== What is a volume
+
+TL;DR is that a normal container loses all its data when it stops. A volume is bound to a filesystem destination on the host, and thus when the container dies, the data isn't lost. This is needed for stateful applications like databases.
+
+=== More reading:
+
+- Red Hat docs: link:https://docs.redhat.com/zh-cn/documentation/openshift_container_platform/4.5/html/nodes/nodes-containers-volumes[Using volumes to persist container data]
+- Docker docs: link:https://docs.docker.com/engine/storage/volumes/#:~:text=Volumes%20are%20persistent%20data%20stores,directory%20on%20the%20Docker%20host.[Volumes]
