@@ -1,4 +1,4 @@
-package com.eefenn.NationalIdentityServiceAPI
+package com.eefenn.nationalIdentityServiceAPI
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

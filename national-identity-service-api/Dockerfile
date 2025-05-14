@@ -16,6 +16,6 @@ WORKDIR /app
 
 COPY --from=builder /app/build/libs/*.jar /app/app.jar
 
-EXPOSE 8080
+EXPOSE ${SERVER_PORT_EXTERNAL}
 
 ENTRYPOINT ["java", "-jar", "app.jar"]

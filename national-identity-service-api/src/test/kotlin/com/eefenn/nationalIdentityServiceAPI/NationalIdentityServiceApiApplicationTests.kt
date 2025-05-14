@@ -1,4 +1,4 @@
-package com.eefenn.NationalIdentityServiceAPI
+package com.eefenn.nationalIdentityServiceAPI
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

@@ -1,1 +1,1 @@
-rootProject.name = "national-identity-service-api"
+rootProject.name = "nationalIdentityServiceAPI"

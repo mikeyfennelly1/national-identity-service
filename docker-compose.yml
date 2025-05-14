@@ -3,10 +3,16 @@ version: "3.8"
 services:
   web-api:
     build: ./web-api
-    ports:
-      - "3000:3000"
     depends_on:
       - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5433/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+    env_file:
+      - .env
+    ports:
+      - "${SERVER_PORT_EXTERNAL}:${SERVER_PORT_INTERNAL}"
 
   db:
     build: ./db
