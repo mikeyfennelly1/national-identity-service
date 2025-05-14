@@ -1,3 +1,5 @@
 /.idea
 /.env
 /.gradle
+.env
+/national-identity-service-api/build
