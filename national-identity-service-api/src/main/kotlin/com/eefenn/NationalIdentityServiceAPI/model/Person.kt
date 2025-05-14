@@ -1,4 +1,4 @@
-package com.eefenn.nationalIdentityServiceAPI.model
+package com.eefenn.NationalIdentityServiceAPI.model
 
 import jakarta.persistence.*
 

@@ -1,9 +1,9 @@
-package com.eefenn.nationalIdentityServiceAPI.controller
+package com.eefenn.NationalIdentityServiceAPI.controller
 
 import org.springframework.web.bind.annotation.*
 
-import com.eefenn.nationalIdentityServiceAPI.repository.PersonRepository
-import com.eefenn.nationalIdentityServiceAPI.model.Person
+import com.eefenn.NationalIdentityServiceAPI.repository.PersonRepository
+import com.eefenn.NationalIdentityServiceAPI.model.Person
 
 @RestController
 @RequestMapping("/api/persons")
